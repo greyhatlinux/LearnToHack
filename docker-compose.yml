@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+        masterServer:
+                image: metasploitframework/metasploit-framework
+                volumes:
+                        - "logMS:/var/log"
+
+        dvwa:
+                image: vulnerables/web-dvwa
+                ports:
+                        - 8888:80
+                volumes:
+                        - "logDVWA:/var/log"
+        badstore:
+                image: jvhoof/badstore-docker
+                ports:
+                        - 9999:80
+                volumes:
+                        - "logBS:/var/log"
+
+volumes:
+        logMS:
+        logDVWA:
+        logBS:
