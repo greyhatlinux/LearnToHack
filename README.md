@@ -18,4 +18,4 @@ DAMM VULNERABLE WEB APP
 ### Platform used : Docker
 
 ### Overview : 
-![system view](.img/learntohack.jpeg)
+![systemview](img/learntohack.jpeg)
